@@ -43,7 +43,18 @@ img{
     /* Zooms in and out on the X and Y axis */
     /* transform: scale(0); */
 
-    
-    /* //////////////////// */
+    /* //// 3.transforme :rotate() */
+
+    /* Rotates the image on the X axis in 3D */
+    /* transform: rotateX(0deg); */
+
+    /* Rotates the image on the Y axis in 3D */
+    /* transform: rotateY(0deg); */
+
+    /* Rotates the image on the X and Y axis
+    clockwise and counterclockwise */
+    /* transform: rotateZ(0deg); */
+
+    /* ///////////////////////////////////////////////// */
 
 }
