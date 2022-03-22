@@ -58,3 +58,27 @@ img{
     /* ///////////////////////////////////////////////// */
 
 }
+
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: pink;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+
+    /* Transitions */
+    /* Background setting is done before the background change time
+    linear => In this way, change is never accelerated or slowed down
+    ease-in => In this method, first the speed of change is reduced and then it is accelerated
+    ease-out => In this method, change is first fast and then slow*/
+    transition: background 1s , transform 1s 1s linear;
+}
+
+.circle:hover {
+    background: salmon;
+    transform: rotate(360deg);
+}
