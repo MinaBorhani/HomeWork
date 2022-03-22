@@ -19,17 +19,30 @@ img{
     /* Moves the image on the X axis 
     If we give a negative number it moves to the left 
     and if we give a positive number it moves to the right*/
-    transform: translateX(0px); 
+    /* transform: translateX(0px);  */
     
     /* Moves the image on the Y axis 
     If we give a negative number it moves to the top 
     and if we give a positive number it moves to the down*/
-    transform: translateY(0px); 
+    /* transform: translateY(0px);  */
 
     /* Moves the image on the Y & X axis 
     The first value moves on the X axis and
      the second number on the Y axis*/
-    transform: translate(0px , 0px);
+    /* transform: translate(0px , 0px); */
+    
+
+    /* //// 2.transforme :scale() */
+
+    /* Zooms in and out on the X axis */
+    /* transform: scaleX(0); */
+
+    /* Zooms in and out on the X axis */
+    /* transform: scaleY(0); */
+
+    /* Zooms in and out on the X and Y axis */
+    /* transform: scale(0); */
+
     
     /* //////////////////// */
 
