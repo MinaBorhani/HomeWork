@@ -1,4 +1,4 @@
-body{
+/* body{
     background: lightblue;
     text-align: center;
 }
@@ -7,11 +7,11 @@ body{
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-}
+} */
 
 
 
-img{
+/* img{ */
     /* ----. transforme .----- */
 
     /* ///////////////////////////////////////////////// */
@@ -60,4 +60,86 @@ img{
 
     /* ///////////////////////////////////////////////// */
 
+/* } */
+
+/* 
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: pink;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer; */
+
+    /* Transitions */
+    /* Background setting is done before the background change time
+    linear => In this way, change is never accelerated or slowed down
+    ease-in => In this method, first the speed of change is reduced and then it is accelerated
+    ease-out => In this method, change is first fast and then slow*/
+    /* transition: background 1s , transform 1s 1s linear;
+} */
+
+/* .circle:hover {
+    background: salmon;
+    transform: rotate(360deg);
+} */
+
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grass , .sky , .road {
+    position: relative;
+}
+
+.sky{
+    height: 40%;
+    background: skyblue;
+}
+
+.grass{
+    height: 30%;
+    background: seagreen;
+}
+
+.road{
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+/* //ELEMENTS TO ANIMATION // */
+.mario{
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 5s;
+}
+
+/* // KEYFRAMES // */
+@keyframes drive{
+    from{transform: translateX(0);}
+    to{transform: translate(2000px);}
 }
