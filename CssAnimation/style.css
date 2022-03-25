@@ -140,11 +140,14 @@ html , body{
     /* animation-fill-mode: backwards; */
     /* == */
     animation-fill-mode: both;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
+
+    /* Repeats the animation infinite times. */
+    animation-iteration-count: infinite;
 }
 
 /* // KEYFRAMES // */
 @keyframes drive{
-    from{transform: translateX(200);}
-    to{transform: translate(700px);}
+    from{transform: translateX(-200);}
+    to{transform: translate(2200px);}
 } 
