@@ -146,6 +146,21 @@ html , body{
     animation-iteration-count: infinite;
 }
 
+
+.luigi{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+    /* Animation mode :
+    alternates => The animation goes first forward and then backward
+    reverse => The animation goes back */
+    animation-direction: reverse;
+}
 /* // KEYFRAMES // */
 @keyframes drive{
     from{transform: translateX(-200);}
