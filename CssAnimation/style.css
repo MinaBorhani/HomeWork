@@ -14,7 +14,6 @@
 /* img{ */
     /* ----. transforme .----- */
 
-    /* ///////////////////////////////////////////////// */
     /* //// 1.transforme :translate() */
 
     /* Moves the image on the X axis 
@@ -33,7 +32,6 @@
     /* transform: translate(0px , 0px); */
     
 
-    /* ///////////////////////////////////////////////// */
     /* //// 2.transforme :scale() */
 
     /* Zooms in and out on the X axis */
@@ -45,7 +43,6 @@
     /* Zooms in and out on the X and Y axis */
     /* transform: scale(0); */
 
-    /* ///////////////////////////////////////////////// */
     /* //// 3.transforme :rotate() */
 
     /* Rotates the image on the X axis in 3D */
@@ -135,11 +132,19 @@ html , body{
     top: -40px;
     left: 0px;
     animation-name: drive;
-    animation-duration: 5s;
+    animation-duration: 3s;
+
+    /* ***** Animation Fill Mode **** */
+
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    /* == */
+    animation-fill-mode: both;
+    animation-delay: 2s;
 }
 
 /* // KEYFRAMES // */
 @keyframes drive{
-    from{transform: translateX(0);}
-    to{transform: translate(2000px);}
-}
+    from{transform: translateX(200);}
+    to{transform: translate(700px);}
+} 
