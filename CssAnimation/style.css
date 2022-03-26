@@ -144,6 +144,11 @@ html , body{
 
     /* Repeats the animation infinite times. */
     animation-iteration-count: infinite;
+
+    /* We can control the speed of the animation
+    https://cubic-bezier.com */
+    animation-timing-function: cubic-bezier(0,.77,1,.28);
+
 }
 
 
@@ -155,6 +160,8 @@ html , body{
     animation-duration: 5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+
+    
 
     /* Animation mode :
     alternates => The animation goes first forward and then backward
