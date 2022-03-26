@@ -131,24 +131,24 @@ html , body{
     position: absolute;
     top: -40px;
     left: 0px;
-    animation-name: drive;
-    animation-duration: 3s;
+    /* animation-name: drive; */
+    /* animation-duration: 3s; */
 
     /* ***** Animation Fill Mode **** */
 
     /* animation-fill-mode: forwards; */
     /* animation-fill-mode: backwards; */
     /* == */
-    animation-fill-mode: both;
+    /* animation-fill-mode: both; */
     /* animation-delay: 2s; */
 
     /* Repeats the animation infinite times. */
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
 
     /* We can control the speed of the animation
     https://cubic-bezier.com */
-    animation-timing-function: cubic-bezier(0,.77,1,.28);
-
+    /* animation-timing-function: cubic-bezier(0,.77,1,.28); */
+    animation: drive 3s both infinite linear , jump 0.3s 1.2s ease;
 }
 
 
@@ -197,4 +197,11 @@ html , body{
 @keyframes wind{
     from{left: -300px}
     to{left: 100%}
+}
+
+/* Chaining Animations */
+@keyframes jump {
+    0%{top: -40px}
+    50%{top: -100px}
+    100%{top:-40px}
 }
