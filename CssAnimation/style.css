@@ -166,10 +166,35 @@ html , body{
     /* Animation mode :
     alternates => The animation goes first forward and then backward
     reverse => The animation goes back */
-    animation-direction: reverse;
+    /* animation-direction: reverse; */
 }
+
+.cloud{
+    position: absolute;
+}
+
+.cloud:nth-child(1){
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    
+    /* Shorthand */
+    animation: wind 80s linear infinite reverse;
+}
+
+.cloud.cloud:nth-child(2){
+    width: 300px;
+    top: 0;
+    animation: wind 50s linear infinite reverse;
+}
+
 /* // KEYFRAMES // */
 @keyframes drive{
     from{transform: translateX(-200);}
     to{transform: translate(2200px);}
 } 
+
+@keyframes wind{
+    from{left: -300px}
+    to{left: 100%}
+}
