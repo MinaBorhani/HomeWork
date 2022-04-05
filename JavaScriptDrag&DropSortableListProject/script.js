@@ -23,7 +23,14 @@ createList();
 
 //Insert List items into DOM
 function createList(){
-    [...rechestPeople].forEach((person , index) =>{
+    [...rechestPeople]
+    .map(a =>({value: a, sort: Math.random() }))
+    .sort((a,b)=> a.sort-b.sort)
+    .map(a=> a.value)
+    .forEach((person , index) =>{
+        // console.log(person);
+
+
         const listItem = document.createElement('li');
 
         listItem.setAttribute('data-index', index);
