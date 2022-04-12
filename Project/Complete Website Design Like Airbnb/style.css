@@ -230,3 +230,13 @@ nav{
     font-size: 22px;
     margin: 0 10px;
 }
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
